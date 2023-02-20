@@ -10,7 +10,7 @@ const cssColors = (color) => {
 }
 
 const getColor = () => {
-  return 'teal'
+  return 'green'
 }
 
 const colors = {
@@ -435,8 +435,12 @@ const rtMoisture2 = document.getElementById('rtMoisture2')
 const rtTempreture = document.getElementById('rtTempreture')
 const rtHumidity = document.getElementById('rtHumidity')
 
+///////////////////////////////////
+const iswatering = document.getElementById('isWatering');
+
 function startLiveUpdate() {
   setInterval(function () {
+
     fetch('http://localhost:3000/data', {
       method: 'GET',
     })
@@ -462,35 +466,29 @@ function startLiveUpdate() {
         updateData(moisture1Data, activeMoisture1Chart, currentmoisture1, moisture1lineChart, timeStamp, rtMoisture1)
         updateData(moisture2Data, activeMoisture2Chart, currentmoisture2, moisture2lineChart, timeStamp, rtMoisture2)
 
-        // if (activeTempretureChart.data.datasets[0].length == 0) {
-        //   temp = []
-        //   for (let i = 0; i < data.length; i++) {
-        //     temp.push(data[i].temperature)
-        //   }
-        //   activeTempretureChart.data.labels = [...temp, ...temp]
-        //   activeTempretureChart.data.datasets[0].data = [...temp, ...temp]
-        // } else {
-        //   activeTempretureChart.data.datasets[0].data.push(data[0].temperature)
-        //   activeTempretureChart.data.datasets[0].data.splice(0, 1)
-        //   activeTempretureChart.update()
-        //   currentTemp.innerText = data[0].temperature
-        // }
-
-        // //line chart of tempreture
-        // for (let i = 0; i < data.length; i++) {
-        //   timeStamp.push(new Date(Date.parse(data[i].reading_time)).toLocaleTimeString())
-        // }
-
-        // //set the line chart
-        // lineChart.data.labels = timeStamp
-        // lineChart.data.datasets[0].data = activeTempretureChart.data.datasets[0].data
-        // lineChart.update()
-        // console.log(timeStamp, activeTempretureChart.data.datasets[0].data)
       })
       .catch(function (error) {
         console.log(error)
       })
-  }, 10000)
+
+
+    fetch('http://localhost:3000/lastWater', {
+      method: 'GET',
+    })
+      .then((r) => r.json())
+      .then(function (data) {
+        //every 10 second update the data
+        iswatering.innerText = new Date(Date.parse(data[0].watering_time)).toLocaleString('en-us')
+      })
+      .catch(function (error) {
+        console.log(error)
+      })
+
+      
+  }, 3000)
+
+
+
 }
 
 function updateData(data, activeChart, currentData, lineChart, timeStamp, realTime) {
@@ -519,4 +517,5 @@ function updateData(data, activeChart, currentData, lineChart, timeStamp, realTi
 //start the Loading of the data
 document.addEventListener('DOMContentLoaded', (e) => {
   startLiveUpdate()
+
 })

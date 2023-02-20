@@ -113,24 +113,27 @@
                 </button>
 
                             <!-- Notification button -->
-                            <button @click="openNotificationsPanel" class="p-2 transition-colors duration-200 rounded-full text-primary-lighter bg-primary-50 hover:text-primary hover:bg-primary-100 dark:hover:text-light dark:hover:bg-primary-dark dark:bg-dark focus:outline-none focus:bg-primary-100 dark:focus:bg-primary-dark focus:ring-primary-darker">
-                  <span class="sr-only">Open Notification panel</span>
-                  <svg
-                    class="w-7 h-7"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    aria-hidden="true"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
-                    />
-                  </svg>
-                </button>
+                            <button
+                            @click="openNotificationsPanel"
+                            class="p-2 transition-colors duration-200 rounded-full text-primary-lighter bg-primary-50 hover:text-primary hover:bg-primary-100 dark:hover:text-light dark:hover:bg-primary-dark dark:bg-dark focus:outline-none focus:bg-primary-100 dark:focus:bg-primary-dark focus:ring-primary-darker"
+                          >
+                            <span class="sr-only">Open Notification panel</span>
+                            <svg
+                              class="w-7 h-7"
+                              xmlns="http://www.w3.org/2000/svg"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              stroke="currentColor"
+                              aria-hidden="true"
+                            >
+                              <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
+                              />
+                            </svg>
+                          </button>
 
                             <!-- Search button -->
 
@@ -213,25 +216,27 @@
                   </button>
 
                                 <!-- Notification button -->
-                                <button @click="openNotificationsPanel(); $nextTick(() => { isMobileSubMenuOpen = false })" class="p-2 transition-colors duration-200 rounded-full text-primary-lighter bg-primary-50 hover:text-primary hover:bg-primary-100 dark:hover:text-light dark:hover:bg-primary-dark dark:bg-dark focus:outline-none focus:bg-primary-100 dark:focus:bg-primary-dark focus:ring-primary-darker">
-                    <span class="sr-only">Open notifications panel</span>
-                    <svg
-                      class="w-7 h-7"
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      aria-hidden="true"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
-                      />
-                    </svg>
-                  </button>
-
+                                <button
+                                @click="openNotificationsPanel(); $nextTick(() => { isMobileSubMenuOpen = false })"
+                                class="p-2 transition-colors duration-200 rounded-full text-primary-lighter bg-primary-50 hover:text-primary hover:bg-primary-100 dark:hover:text-light dark:hover:bg-primary-dark dark:bg-dark focus:outline-none focus:bg-primary-100 dark:focus:bg-primary-dark focus:ring-primary-darker"
+                              >
+                                <span class="sr-only">Open notifications panel</span>
+                                <svg
+                                  class="w-7 h-7"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  fill="none"
+                                  viewBox="0 0 24 24"
+                                  stroke="currentColor"
+                                  aria-hidden="true"
+                                >
+                                  <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
+                                  />
+                                </svg>
+                              </button>
                                 <!-- Search button -->
 
 
@@ -322,11 +327,8 @@
                                     <span>
                    
 
-
-
-
                    <svg xmlns="http://www.w3.org/2000/svg" width="192" 
-                      class="w-12 h-12 text-gray-300 dark:text-primary-dark" fill="#ae8a27" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><circle cx="212" cy="80" r="20" fill="none" stroke="#ae8a27" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></circle><path d="M88,147V48a32,32,0,0,1,64,0v99h0a52,52,0,1,1-64,0Z" fill="none" stroke="#ae8a27" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path><circle cx="120" cy="188" r="20" fill="none" stroke="#ae8a27" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></circle><line x1="120" y1="168" x2="120" y2="88" fill="none" stroke="#ae8a27" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line></svg>
+                      class="w-12 h-12 text-gray-300 dark:text-primary-dark" fill="green" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><circle cx="212" cy="80" r="20" fill="none" stroke="green" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></circle><path d="M88,147V48a32,32,0,0,1,64,0v99h0a52,52,0,1,1-64,0Z" fill="none" stroke="green" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path><circle cx="120" cy="188" r="20" fill="none" stroke="green" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></circle><line x1="120" y1="168" x2="120" y2="88" fill="none" stroke="green" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line></svg>
                     </span>
                                 </div>
                             </div>
@@ -345,7 +347,7 @@
                                 <div>
                                     <span>
                     <svg xmlns="http://www.w3.org/2000/svg" 
-                     class="w-12 h-12 text-gray-300 dark:text-primary-dark" fill="#ae8a27" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><path d="M208,144c0-72-80-128-80-128S48,72,48,144a80,80,0,0,0,160,0Z" fill="none" stroke="#ae8a27" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path><line x1="128" y1="224" x2="128" y2="16" fill="none" stroke="#ae8a27" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><line x1="128" y1="128" x2="206.7" y2="128" fill="none" stroke="#ae8a27" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><line x1="128" y1="96" x2="196.6" y2="96" fill="none" stroke="#ae8a27" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><line x1="128" y1="160" x2="206.4" y2="160" fill="none" stroke="#ae8a27" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><line x1="128" y1="192" x2="192" y2="192" fill="none" stroke="#ae8a27" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><line x1="128" y1="64" x2="177" y2="64" fill="none" stroke="#ae8a27" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line></svg>
+                     class="w-12 h-12 text-gray-300 dark:text-primary-dark" fill="green" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><path d="M208,144c0-72-80-128-80-128S48,72,48,144a80,80,0,0,0,160,0Z" fill="none" stroke="green" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path><line x1="128" y1="224" x2="128" y2="16" fill="none" stroke="green" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><line x1="128" y1="128" x2="206.7" y2="128" fill="none" stroke="green" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><line x1="128" y1="96" x2="196.6" y2="96" fill="none" stroke="green" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><line x1="128" y1="160" x2="206.4" y2="160" fill="none" stroke="green" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><line x1="128" y1="192" x2="192" y2="192" fill="none" stroke="green" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><line x1="128" y1="64" x2="177" y2="64" fill="none" stroke="green" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line></svg>
                     </span>
                                 </div>
                             </div>
@@ -364,7 +366,7 @@
                                 <div>
                                     <span>
                     <svg xmlns="http://www.w3.org/2000/svg" 
-                     class="w-12 h-12 text-gray-300 dark:text-primary-dark" fill="#ae8a27" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><path d="M208,144c0-72-80-128-80-128S48,72,48,144a80,80,0,0,0,160,0Z" fill="none" stroke="#ae8a27" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path><line x1="128" y1="224" x2="128" y2="16" fill="none" stroke="#ae8a27" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><line x1="128" y1="128" x2="206.7" y2="128" fill="none" stroke="#ae8a27" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><line x1="128" y1="96" x2="196.6" y2="96" fill="none" stroke="#ae8a27" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><line x1="128" y1="160" x2="206.4" y2="160" fill="none" stroke="#ae8a27" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><line x1="128" y1="192" x2="192" y2="192" fill="none" stroke="#ae8a27" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><line x1="128" y1="64" x2="177" y2="64" fill="none" stroke="#ae8a27" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line></svg>
+                     class="w-12 h-12 text-gray-300 dark:text-primary-dark" fill="green" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><path d="M208,144c0-72-80-128-80-128S48,72,48,144a80,80,0,0,0,160,0Z" fill="none" stroke="green" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path><line x1="128" y1="224" x2="128" y2="16" fill="none" stroke="green" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><line x1="128" y1="128" x2="206.7" y2="128" fill="none" stroke="green" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><line x1="128" y1="96" x2="196.6" y2="96" fill="none" stroke="green" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><line x1="128" y1="160" x2="206.4" y2="160" fill="none" stroke="green" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><line x1="128" y1="192" x2="192" y2="192" fill="none" stroke="green" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><line x1="128" y1="64" x2="177" y2="64" fill="none" stroke="green" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line></svg>
                     </span>
                                 </div>
                             </div>
@@ -380,14 +382,14 @@
                                     </h6>
                                     <span class="text-xl font-semibold" id="isWatering"> - </span>
                                     <span class="inline-block px-2 py-px ml-2 text-xs text-green-500 bg-green-100 rounded-md">
-                      now
+                      Last Watered Time
                     </span>
                                 </div>
                                 <div>
                                     <span>
                      
             <svg xmlns="http://www.w3.org/2000/svg" 
-            class="w-12 h-12 text-gray-300 dark:text-primary-dark" fill="#ae8a27" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><line x1="128" y1="80" x2="128" y2="136" fill="none" stroke="#ae8a27" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><path d="M164.5,32h-73a7.9,7.9,0,0,0-5.6,2.3L34.3,85.9A7.9,7.9,0,0,0,32,91.5v73a7.9,7.9,0,0,0,2.3,5.6l51.6,51.6a7.9,7.9,0,0,0,5.6,2.3h73a7.9,7.9,0,0,0,5.6-2.3l51.6-51.6a7.9,7.9,0,0,0,2.3-5.6v-73a7.9,7.9,0,0,0-2.3-5.6L170.1,34.3A7.9,7.9,0,0,0,164.5,32Z" fill="none" stroke="#ae8a27" stroke-miterlimit="10" stroke-width="16"></path><circle cx="128" cy="172" r="12"></circle></svg>
+            class="w-12 h-12 text-gray-300 dark:text-primary-dark" fill="green" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><line x1="128" y1="80" x2="128" y2="136" fill="none" stroke="green" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><path d="M164.5,32h-73a7.9,7.9,0,0,0-5.6,2.3L34.3,85.9A7.9,7.9,0,0,0,32,91.5v73a7.9,7.9,0,0,0,2.3,5.6l51.6,51.6a7.9,7.9,0,0,0,5.6,2.3h73a7.9,7.9,0,0,0,5.6-2.3l51.6-51.6a7.9,7.9,0,0,0,2.3-5.6v-73a7.9,7.9,0,0,0-2.3-5.6L170.1,34.3A7.9,7.9,0,0,0,164.5,32Z" fill="none" stroke="green" stroke-miterlimit="10" stroke-width="16"></path><circle cx="128" cy="172" r="12"></circle></svg>
   
                     </span>
                                 </div>
@@ -418,10 +420,6 @@
                                 <div class="flex items-center justify-between p-4 border-b dark:border-primary">
                                     <h4 class="text-lg font-semibold text-gray-500 dark:text-light">Line Chart</h4>
                                     <div class="flex items-center">
-                                        <button class="relative focus:outline-none" x-cloak @click="isOn = !isOn; $parent.updateLineChart()">
-                        <div
-                          class="w-12 h-6 transition rounded-full outline-none bg-primary-100 dark:bg-primary-darker"
-                        ></div>
                         <div
                           class="absolute top-0 left-0 inline-flex items-center justify-center w-6 h-6 transition-all duration-200 ease-in-out transform scale-110 rounded-full shadow-sm"
                           :class="{ 'translate-x-0  bg-white dark:bg-primary-100': !isOn, 'translate-x-6 bg-primary-light dark:bg-primary': isOn }"
@@ -461,10 +459,7 @@
                                 <div class="flex items-center justify-between p-4 border-b dark:border-primary">
                                     <h4 class="text-lg font-semibold text-gray-500 dark:text-light">Line Chart</h4>
                                     <div class="flex items-center">
-                                        <button class="relative focus:outline-none" x-cloak @click="isOn = !isOn; $parent.updateLineChart()">
-                        <div
-                          class="w-12 h-6 transition rounded-full outline-none bg-primary-100 dark:bg-primary-darker"
-                        ></div>
+                             
                         <div
                           class="absolute top-0 left-0 inline-flex items-center justify-center w-6 h-6 transition-all duration-200 ease-in-out transform scale-110 rounded-full shadow-sm"
                           :class="{ 'translate-x-0  bg-white dark:bg-primary-100': !isOn, 'translate-x-6 bg-primary-light dark:bg-primary': isOn }"
@@ -504,10 +499,7 @@
                                 <div class="flex items-center justify-between p-4 border-b dark:border-primary">
                                     <h4 class="text-lg font-semibold text-gray-500 dark:text-light">Line Chart</h4>
                                     <div class="flex items-center">
-                                        <button class="relative focus:outline-none" x-cloak @click="isOn = !isOn; $parent.updateLineChart()">
-                        <div
-                          class="w-12 h-6 transition rounded-full outline-none bg-primary-100 dark:bg-primary-darker"
-                        ></div>
+                      
                         <div
                           class="absolute top-0 left-0 inline-flex items-center justify-center w-6 h-6 transition-all duration-200 ease-in-out transform scale-110 rounded-full shadow-sm"
                           :class="{ 'translate-x-0  bg-white dark:bg-primary-100': !isOn, 'translate-x-6 bg-primary-light dark:bg-primary': isOn }"
@@ -547,10 +539,7 @@
                                 <div class="flex items-center justify-between p-4 border-b dark:border-primary">
                                     <h4 class="text-lg font-semibold text-gray-500 dark:text-light">Line Chart</h4>
                                     <div class="flex items-center">
-                                        <button class="relative focus:outline-none" x-cloak @click="isOn = !isOn; $parent.updateLineChart()">
-                        <div
-                          class="w-12 h-6 transition rounded-full outline-none bg-primary-100 dark:bg-primary-darker"
-                        ></div>
+                     
                         <div
                           class="absolute top-0 left-0 inline-flex items-center justify-center w-6 h-6 transition-all duration-200 ease-in-out transform scale-110 rounded-full shadow-sm"
                           :class="{ 'translate-x-0  bg-white dark:bg-primary-100': !isOn, 'translate-x-6 bg-primary-light dark:bg-primary': isOn }"
@@ -810,7 +799,7 @@
               <!-- Action tab -->
               <div class="space-y-4" x-show.transition.in="activeTabe == 'action'">
                 <a href="#" class="block">
-                  <div class="flex px-4 space-x-4">
+               <!--    <div class="flex px-4 space-x-4">
                     <div class="relative flex-shrink-0">
                       <span
                         class="z-10 inline-block p-2 overflow-visible rounded-full bg-primary-50 text-primary-light dark:bg-primary-darker"
@@ -834,7 +823,7 @@
                     </div>
                     <div class="flex-1 overflow-hidden">
                       <h5 class="text-sm font-semibold text-gray-600 dark:text-light">
-                        New project "KWD Dashboard" created
+                        New project "Smart Irrigation" created
                       </h5>
                       <p class="text-sm font-normal text-gray-400 truncate dark:text-primary-lighter">
                         Looks like there might be a new theme soon
@@ -866,7 +855,7 @@
                                 </div>
                                 <div class="flex-1 overflow-hidden">
                                     <h5 class="text-sm font-semibold text-gray-600 dark:text-light">
-                                        KWD Dashboard v0.0.2 was released
+                                        Smart Irrigation v0.0.2 was released
                                     </h5>
                                     <p class="text-sm font-normal text-gray-400 truncate dark:text-primary-lighter">
                                         Successful new version was released
@@ -874,8 +863,8 @@
                                     <span class="text-sm font-normal text-gray-400 dark:text-primary-light"> 2d ago </span>
                                 </div>
                             </div>
-                        </a>
-                        <template x-for="i in 20" x-key="i">
+                        </a> -->
+                        <div x-data="allData" > <template x-for="data,i in allData" x-key="i">
                   <a href="#" class="block">
                     <div class="flex px-4 space-x-4">
                       <div class="relative flex-shrink-0">
@@ -903,16 +892,26 @@
                       </div>
                       <div class="flex-1 overflow-hidden">
                         <h5 class="text-sm font-semibold text-gray-600 dark:text-light">
-                          New project "KWD Dashboard" created
+                          The Over All Data
                         </h5>
-                        <p class="text-sm font-normal text-gray-400 truncate dark:text-primary-lighter">
-                          Looks like there might be a new theme soon
-                        </p>
-                        <span class="text-sm font-normal text-gray-400 dark:text-primary-light"> 9h ago </span>
+                        <div class="grid grid-cols-2 gap-1">
+                          
+                          <p class="text-sm font-normal text-gray-400 truncate dark:text-primary-lighter" x-text="'Tempreture: ' +  data.temperature">
+                          </p>
+                          <p class="text-sm font-normal text-gray-400 truncate dark:text-primary-lighter" x-text="'Moisture One: ' +  data.moisture1">
+                          </p>
+                          <p class="text-sm font-normal text-gray-400 truncate dark:text-primary-lighter" x-text="'Moisture Two: ' +  data.moisture2">
+                          </p>
+                          <p class="text-sm font-normal text-gray-400 truncate dark:text-primary-lighter" x-text="'Humidity: ' +  data.humidity">
+                          </p>
+                        </div>
+                        <span class="text-sm font-normal text-gray-400 dark:text-primary-light" x-text="new Date(Date.parse(data.reading_time)).toLocaleString('en-us')"> </span>
                       </div>
                     </div>
                   </a>
-                </template>
+                </template></div>
+                        
+                       
                     </div>
 
             </div>
@@ -1027,6 +1026,18 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.bundle.min.js"></script>
     <script src="build/js/script.js"></script>
     <script>
+      fetch('http://localhost:3000/data', {
+        method: 'GET',
+      })
+        .then((r) => r.json())
+        .then(function (data) {
+          allData = data
+        }).catch((err)=>{
+        console.log(err);
+        })
+
+
+      isSearchPanelOpen = false
       
         const setup = () => {
             const getTheme = () => {
@@ -1045,7 +1056,7 @@
                 if (window.localStorage.getItem('color')) {
                     return window.localStorage.getItem('color')
                 }
-                return 'cyan'
+                return 'green'
             }
 
             const setColors = (color) => {
@@ -1061,37 +1072,7 @@
                 window.localStorage.setItem('color', color)
               
             }
-
-            const updateBarChart = (on) => {
-                const data = {
-                    data: randomData(),
-                    backgroundColor: 'rgb(207, 250, 254)',
-                }
-                if (on) {
-                    barChart.data.datasets.push(data)
-                    barChart.update()
-                } else {
-                    barChart.data.datasets.splice(1)
-                    barChart.update()
-                }
-            }
-
-            const updateDoughnutChart = (on) => { 
-                const data = random()
-                const color = 'rgb(207, 250, 254)'
-                if (on) {
-                    doughnutChart.data.labels.unshift('Seb')
-                    doughnutChart.data.datasets[0].data.unshift(data)
-                    doughnutChart.data.datasets[0].backgroundColor.unshift(color)
-                    doughnutChart.update()
-                } else {
-                    doughnutChart.data.labels.splice(0, 1)
-                    doughnutChart.data.datasets[0].data.splice(0, 1)
-                    doughnutChart.data.datasets[0].backgroundColor.splice(0, 1)
-                    doughnutChart.update()
-                }
-            }
-
+            
             const updateLineChart = () => {
                 lineChart.data.datasets[0].data.reverse()
                 lineChart.update()
@@ -1153,8 +1134,6 @@
                         this.$refs.mobileMainMenu.focus()
                     })
                 },
-                updateBarChart,
-                updateDoughnutChart,
                 updateLineChart,
             }
         }
