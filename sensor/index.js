@@ -57,36 +57,36 @@ app.get("/upload_sensor_data", (req, res, next) => {
 
   if (temp == 0 || temp < -50 || hum <= 0 || moist1 == 0 || moist2 == 0) {
     res.send("Data saved successfully");
-    return;
+    // return;
+  } else {
+    var post = {
+      temperature: temp,
+      humidity: hum,
+      moisture1: moist1,
+      moisture2: moist2,
+    };
+    var query = connection.query(
+      "INSERT INTO sensor SET ?",
+      post,
+      function (error, results, fields) {
+        if (error) throw error;
+      }
+    );
+    console.log(query.sql);
+
+    post = {
+      iswatering: iswatering,
+    };
+    query = connection.query(
+      "INSERT INTO watering SET ?",
+      post,
+      function (err, result, fields) {
+        if (err) throw err;
+      }
+    );
+    console.log(query.sql);
+    res.send("Data saved successfully");
   }
-
-  var post = {
-    temperature: temp,
-    humidity: hum,
-    moisture1: moist1,
-    moisture2: moist2,
-  };
-  var query = connection.query(
-    "INSERT INTO sensor SET ?",
-    post,
-    function (error, results, fields) {
-      if (error) throw error;
-    }
-  );
-  console.log(query.sql);
-
-  post = {
-    iswatering: iswatering,
-  };
-  query = connection.query(
-    "INSERT INTO watering SET ?",
-    post,
-    function (err, result, fields) {
-      if (err) throw err;
-    }
-  );
-  console.log(query.sql);
-  res.send("Data saved successfully");
 });
 
 app.listen(3000, function () {
